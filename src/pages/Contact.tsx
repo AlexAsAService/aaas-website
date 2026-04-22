@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import MailIcon from '../assets/icons/mail.svg?react';
-import CopyIcon from '../assets/icons/copy.svg?react';
-import CheckIcon from '../assets/icons/check.svg?react';
-import ArrowRightIcon from '../assets/icons/arrow-right.svg?react';
-import GitHubIcon from '../assets/icons/github.svg?react';
+import MailIcon from '@/assets/icons/mail.svg?react';
+import CopyIcon from '@/assets/icons/copy.svg?react';
+import CheckIcon from '@/assets/icons/check.svg?react';
+import ArrowRightIcon from '@/assets/icons/arrow-right.svg?react';
+import GitHubIcon from '@/assets/icons/github.svg?react';
 
 const EMAIL = 'AlexAsAService@gmail.com';
 

@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
-import { useTheme } from '../hooks/useTheme';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { useTheme } from '@/hooks/useTheme';
 
 export default function Layout() {
   useTheme(); // ensure theme class is applied on mount

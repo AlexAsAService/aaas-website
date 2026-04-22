@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ArrowRightIcon from '../../assets/icons/arrow-right.svg?react';
+import ArrowRightIcon from '@/assets/icons/arrow-right.svg?react';
 
 export default function AboutTeaser() {
   return (

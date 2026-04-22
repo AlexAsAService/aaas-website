@@ -1,7 +1,7 @@
-import CodeIcon from '../../assets/icons/code.svg?react';
-import TrendIcon from '../../assets/icons/trend.svg?react';
-import RocketIcon from '../../assets/icons/rocket.svg?react';
-import CloudIcon from '../../assets/icons/cloud.svg?react';
+import CodeIcon from '@/assets/icons/code.svg?react';
+import TrendIcon from '@/assets/icons/trend.svg?react';
+import RocketIcon from '@/assets/icons/rocket.svg?react';
+import CloudIcon from '@/assets/icons/cloud.svg?react';
 
 interface Service {
   id: string;

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ChevronDownIcon from '../../assets/icons/chevron-down.svg?react';
+import ChevronDownIcon from '@/assets/icons/chevron-down.svg?react';
 
 export default function Hero() {
   return (

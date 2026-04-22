@@ -1,4 +1,4 @@
-import QuoteIcon from '../../assets/icons/quote.svg?react';
+import QuoteIcon from '@/assets/icons/quote.svg?react';
 
 const placeholders = [
   { id: 1, initials: 'JD', name: 'Jane D.', company: 'Acme Co.' },

@@ -1,15 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import svgr from 'vite-plugin-svgr'
+import { defineConfig } from 'vitest/config';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-    svgr(),
-    react(),
-  ],
+  plugins: [tailwindcss(), svgr(), react()],
   test: {
     globals: true,
     environment: 'jsdom',
@@ -19,4 +15,4 @@ export default defineConfig({
       reporter: ['text', 'lcov'],
     },
   },
-})
+});

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ArrowRightIcon from '../../assets/icons/arrow-right.svg?react';
 
 export default function ContactCTA() {
   return (
@@ -18,16 +19,7 @@ export default function ContactCTA() {
           className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-violet-600 hover:bg-violet-500 text-white font-semibold transition-colors"
         >
           Get in touch
-          <svg
-            className="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+          <ArrowRightIcon width="16" height="16" />
         </Link>
       </div>
     </section>

@@ -1,4 +1,9 @@
 import { useState } from 'react';
+import MailIcon from '../assets/icons/mail.svg?react';
+import CopyIcon from '../assets/icons/copy.svg?react';
+import CheckIcon from '../assets/icons/check.svg?react';
+import ArrowRightIcon from '../assets/icons/arrow-right.svg?react';
+import GitHubIcon from '../assets/icons/github.svg?react';
 
 const EMAIL = 'AlexAsAService@gmail.com';
 
@@ -13,33 +18,16 @@ function EmailCard() {
 
   return (
     <div className="flex items-center gap-4 p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
-      {/* Icon */}
       <div className="text-violet-600 dark:text-violet-400 shrink-0">
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-hidden="true"
-        >
-          <rect width="20" height="16" x="2" y="4" rx="2" />
-          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-        </svg>
+        <MailIcon width="24" height="24" />
       </div>
 
-      {/* Label + address */}
       <div className="min-w-0 flex-1">
         <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Email</p>
         <p className="text-sm text-zinc-500 dark:text-zinc-400 truncate select-all">{EMAIL}</p>
       </div>
 
-      {/* Actions */}
       <div className="flex items-center gap-2 shrink-0">
-        {/* Copy button */}
         <button
           id="copy-email"
           onClick={handleCopy}
@@ -48,58 +36,19 @@ function EmailCard() {
           className="p-2 rounded-lg text-zinc-400 hover:text-violet-600 dark:hover:text-violet-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
         >
           {copied ? (
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-violet-500"
-              aria-hidden="true"
-            >
-              <path d="M20 6 9 17l-5-5" />
-            </svg>
+            <CheckIcon width="16" height="16" className="text-violet-500" />
           ) : (
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
-              <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
-            </svg>
+            <CopyIcon width="16" height="16" />
           )}
         </button>
 
-        {/* mailto link */}
         <a
           href={`mailto:${EMAIL}`}
           aria-label="Open in email client"
           title="Open in email client"
           className="p-2 rounded-lg text-zinc-400 hover:text-violet-600 dark:hover:text-violet-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
         >
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
+          <ArrowRightIcon width="16" height="16" />
         </a>
       </div>
     </div>
@@ -124,7 +73,6 @@ export default function Contact() {
       <div className="flex flex-col gap-4">
         <EmailCard />
 
-        {/* GitHub */}
         <a
           href="https://github.com/AlexAsAService"
           target="_blank"
@@ -132,35 +80,17 @@ export default function Contact() {
           className="group flex items-center gap-4 p-5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-violet-400/50 dark:hover:border-violet-500/50 hover:shadow-xl hover:shadow-violet-500/10 transition-all duration-300"
         >
           <div className="text-violet-600 dark:text-violet-400 shrink-0">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-              <path d="M9 18c-4.51 2-5-2-7-2" />
-            </svg>
+            <GitHubIcon width="24" height="24" />
           </div>
           <div>
             <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">GitHub</p>
             <p className="text-sm text-zinc-500 dark:text-zinc-400">github.com/AlexAsAService</p>
           </div>
-          <svg
-            className="ml-auto w-4 h-4 text-zinc-400 group-hover:text-violet-500 group-hover:translate-x-1 transition-all"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+          <ArrowRightIcon
+            width="16"
+            height="16"
+            className="ml-auto text-zinc-400 group-hover:text-violet-500 group-hover:translate-x-1 transition-all"
+          />
         </a>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ArrowRightIcon from '../../assets/icons/arrow-right.svg?react';
 
 export default function AboutTeaser() {
   return (
@@ -23,16 +24,11 @@ export default function AboutTeaser() {
           className="inline-flex items-center gap-2 text-violet-600 dark:text-violet-400 font-semibold hover:text-violet-500 dark:hover:text-violet-300 transition-colors group"
         >
           More about Alex
-          <svg
-            className="w-4 h-4 transition-transform group-hover:translate-x-1"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+          <ArrowRightIcon
+            width="16"
+            height="16"
+            className="transition-transform group-hover:translate-x-1"
+          />
         </Link>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import QuoteIcon from '../../assets/icons/quote.svg?react';
+
 const placeholders = [
   { id: 1, initials: 'JD', name: 'Jane D.', company: 'Acme Co.' },
   { id: 2, initials: 'RS', name: 'Robert S.', company: 'Startup Inc.' },
@@ -23,22 +25,13 @@ export default function Testimonials() {
               key={p.id}
               className="relative p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 overflow-hidden"
             >
-              {/* Placeholder blur overlay */}
               <div className="absolute inset-0 backdrop-blur-[2px] bg-white/60 dark:bg-zinc-950/60 flex flex-col items-center justify-center z-10">
                 <span className="text-xs font-semibold tracking-widest uppercase text-violet-600 dark:text-violet-400 border border-violet-400/40 rounded-full px-3 py-1">
                   Coming soon
                 </span>
               </div>
 
-              {/* Ghost content underneath */}
-              <svg
-                className="w-8 h-8 text-violet-400/30 mb-4"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
+              <QuoteIcon width="32" height="32" className="text-violet-400/30 mb-4" />
               <p className="text-zinc-400 dark:text-zinc-600 text-sm leading-relaxed mb-6">
                 Placeholder testimonial text will appear here once client quotes are collected.
               </p>

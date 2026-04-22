@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ChevronDownIcon from '../../assets/icons/chevron-down.svg?react';
 
 export default function Hero() {
   return (
@@ -22,7 +23,8 @@ export default function Hero() {
       </h1>
 
       <p className="max-w-xl text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed">
-        Expert software engineering from greenfield to production. Built for production, not for portfolios.
+        Expert software engineering from greenfield to production. Built for production, not for
+        portfolios.
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 mt-2">
@@ -43,16 +45,7 @@ export default function Hero() {
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-zinc-400 dark:text-zinc-600">
         <span className="text-[10px] tracking-widest uppercase">Scroll</span>
-        <svg
-          className="w-4 h-4 animate-bounce"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path d="M19 9l-7 7-7-7" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+        <ChevronDownIcon width="16" height="16" className="animate-bounce" />
       </div>
     </section>
   );

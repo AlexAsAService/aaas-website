@@ -9,5 +9,5 @@ export default function About() {
         Stub — this is where Alex's story goes.
       </p>
     </section>
-  )
+  );
 }

@@ -9,5 +9,5 @@ export default function Contact() {
         Stub — ways to reach Alex go here.
       </p>
     </section>
-  )
+  );
 }

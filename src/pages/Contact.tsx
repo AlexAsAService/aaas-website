@@ -57,7 +57,7 @@ function EmailCard() {
 
 export default function Contact() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-24">
+    <div className="max-w-2xl mx-auto px-6 py-16 md:py-24">
       <div className="text-center mb-16">
         <p className="text-xs font-semibold tracking-[0.3em] uppercase text-violet-600 dark:text-violet-400 mb-4">
           Contact
@@ -65,7 +65,7 @@ export default function Contact() {
         <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
           Let's talk
         </h1>
-        <p className="text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed">
+        <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
           Tell me about your project. I'll get back to you promptly.
         </p>
       </div>

@@ -8,9 +8,9 @@ const placeholders = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-32 px-6">
+    <section id="testimonials" className="py-16 md:py-24 lg:py-32 px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <p className="text-xs font-semibold tracking-[0.3em] uppercase text-violet-600 dark:text-violet-400 mb-4">
             Social Proof
           </p>
@@ -30,18 +30,17 @@ export default function Testimonials() {
                   Coming soon
                 </span>
               </div>
-
               <QuoteIcon width="32" height="32" className="text-violet-400/30 mb-4" />
-              <p className="text-zinc-400 dark:text-zinc-600 text-sm leading-relaxed mb-6">
+              <p className="text-zinc-500 dark:text-zinc-500 text-sm leading-relaxed mb-6">
                 Placeholder testimonial text will appear here once client quotes are collected.
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center text-xs font-bold text-zinc-500 dark:text-zinc-400">
+                <div className="w-9 h-9 rounded-full bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center text-xs font-bold text-zinc-600 dark:text-zinc-300">
                   {p.initials}
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-zinc-400 dark:text-zinc-600">{p.name}</p>
-                  <p className="text-xs text-zinc-400 dark:text-zinc-600">{p.company}</p>
+                  <p className="text-sm font-semibold text-zinc-600 dark:text-zinc-300">{p.name}</p>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">{p.company}</p>
                 </div>
               </div>
             </div>

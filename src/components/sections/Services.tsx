@@ -48,9 +48,9 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 px-6">
+    <section id="services" className="py-16 md:py-24 lg:py-32 px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <p className="text-xs font-semibold tracking-[0.3em] uppercase text-violet-600 dark:text-violet-400 mb-4">
             What I Do
           </p>
@@ -72,7 +72,7 @@ export default function Services() {
               <p className="text-sm font-medium text-violet-600 dark:text-violet-400 mb-3">
                 {service.tagline}
               </p>
-              <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+              <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 {service.description}
               </p>
             </div>

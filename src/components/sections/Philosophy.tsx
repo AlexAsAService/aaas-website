@@ -1,6 +1,6 @@
 export default function Philosophy() {
   return (
-    <section id="philosophy" className="py-32 px-6 bg-zinc-50 dark:bg-zinc-900/50">
+    <section id="philosophy" className="py-16 md:py-24 lg:py-32 px-6 bg-zinc-50 dark:bg-zinc-900/50">
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-xs font-semibold tracking-[0.3em] uppercase text-violet-600 dark:text-violet-400 mb-6">
           The Philosophy
@@ -13,14 +13,21 @@ export default function Philosophy() {
           </span>
         </h2>
 
-        <p className="text-xl text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-2xl mx-auto mb-16">
+        <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl mx-auto mb-8">
           Your product should be exciting. Your software should be boring. I do the boring part.
-          Boring means it runs when you need it, scales when you grow, and never makes headlines
-          for the wrong reasons.
+          Boring means it runs when you need it, scales when you grow, and never makes headlines for
+          the wrong reasons.
+        </p>
+
+        <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl mx-auto mb-16">
+          Think about the last time you thought about your electricity. You didn't — it was simply
+          there. Great software works the same way. When something is reliable enough, it fades from
+          your attention entirely. Your team stops managing the system and starts building the
+          product. That is what it means to disappear. That is what we are building toward.
         </p>
 
         <blockquote className="max-w-lg mx-auto border-l-2 border-violet-500 pl-6 text-left">
-          <p className="text-2xl font-medium text-zinc-700 dark:text-zinc-300 italic leading-snug">
+          <p className="text-xl md:text-2xl font-medium text-zinc-700 dark:text-zinc-300 italic leading-snug">
             "Great software disappears. That's the goal."
           </p>
         </blockquote>

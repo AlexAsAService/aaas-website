@@ -1,6 +1,14 @@
+import Seo from '@/components/Seo';
+
 export default function About() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
+      <Seo
+        title="About"
+        description="Alex is a full-stack software engineer based in Bettendorf, IA, part of the Quad Cities. A decade of production experience building software that's reliable, boring, and built to last."
+        canonical="/about"
+      />
+
       {/* Page header */}
       <div className="mb-16 text-center">
         <p className="text-xs font-semibold tracking-[0.3em] uppercase text-violet-600 dark:text-violet-400 mb-4">
@@ -12,10 +20,12 @@ export default function About() {
           A
         </div>
 
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-2">
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-1">
           Alex
         </h1>
-        <p className="text-zinc-600 dark:text-zinc-400">Full Stack Engineer</p>
+        <p className="text-zinc-600 dark:text-zinc-400">
+          Full Stack Engineer &middot; Bettendorf, IA
+        </p>
       </div>
 
       {/* Section 1 — Philosophy */}
@@ -52,11 +62,15 @@ export default function About() {
         <h2 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
           The person
         </h2>
-        <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
+        <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
           Computers have always been my thing. I learned to program because I could not stay away
           from them. These days I am particularly interested in automation, CI/CD, containers, and
           the practical side of AI. I am a pragmatist. I reach for the right tool, not the shiny
           one.
+        </p>
+        <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          I am based in Bettendorf, IA, part of the Quad Cities area, and available for remote
+          work anywhere.
         </p>
       </section>
     </div>

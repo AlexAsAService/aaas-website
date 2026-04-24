@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '@/components/Seo';
 import MailIcon from '@/assets/icons/mail.svg?react';
 import CopyIcon from '@/assets/icons/copy.svg?react';
 import CheckIcon from '@/assets/icons/check.svg?react';
@@ -58,6 +59,11 @@ function EmailCard() {
 export default function Contact() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16 md:py-24">
+      <Seo
+        title="Contact"
+        description="Get in touch with Alex, a full-stack engineer based in Bettendorf, IA (Quad Cities). Available for remote projects worldwide."
+        canonical="/contact"
+      />
       <div className="text-center mb-16">
         <p className="text-xs font-semibold tracking-[0.3em] uppercase text-violet-600 dark:text-violet-400 mb-4">
           Contact

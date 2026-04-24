@@ -4,7 +4,38 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alex As A Service</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Alex" />
+    <meta property="og:site_name" content="Alex As A Service" />
+    <meta property="og:type" content="website" />
+    <!-- JSON-LD: Person schema for local/professional search -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alex",
+        "jobTitle": "Full Stack Software Engineer",
+        "url": "https://alexasaservice.com",
+        "email": "mailto:AlexAsAService@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bettendorf",
+          "addressRegion": "IA",
+          "addressCountry": "US"
+        },
+        "sameAs": ["https://github.com/AlexAsAService"],
+        "knowsAbout": [
+          "Software Engineering",
+          "DevOps",
+          "Cloud Infrastructure",
+          "CI/CD",
+          "Docker",
+          "AWS",
+          "React",
+          "Node.js"
+        ]
+      }
+    </script>
     <!-- Anti-flash: set theme class before React hydrates -->
     <script>
       (function () {

@@ -1,10 +1,9 @@
-import { lazy, Suspense } from 'react';
 import type { RouteRecord } from 'vite-react-ssg';
 import Layout from '@/components/Layout';
 
-const Home = lazy(() => import('@/pages/Home'));
-const About = lazy(() => import('@/pages/About'));
-const Contact = lazy(() => import('@/pages/Contact'));
+import Home from '@/pages/Home';
+import About from '@/pages/About';
+import Contact from '@/pages/Contact';
 
 export const routes: RouteRecord[] = [
   {
@@ -14,25 +13,19 @@ export const routes: RouteRecord[] = [
       {
         index: true,
         element: (
-          <Suspense fallback={null}>
             <Home />
-          </Suspense>
         ),
       },
       {
         path: 'about',
         element: (
-          <Suspense fallback={null}>
-            <About />
-          </Suspense>
+          <About />
         ),
       },
       {
         path: 'contact',
         element: (
-          <Suspense fallback={null}>
             <Contact />
-          </Suspense>
         ),
       },
     ],

@@ -4,6 +4,7 @@ import Layout from '@/components/Layout';
 import Home from '@/pages/Home';
 import About from '@/pages/About';
 import Contact from '@/pages/Contact';
+import NotFound from '@/pages/NotFound';
 
 export const routes: RouteRecord[] = [
   {
@@ -13,7 +14,7 @@ export const routes: RouteRecord[] = [
       {
         index: true,
         element: (
-            <Home />
+          <Home />
         ),
       },
       {
@@ -25,7 +26,19 @@ export const routes: RouteRecord[] = [
       {
         path: 'contact',
         element: (
-            <Contact />
+          <Contact />
+        ),
+      },
+      {
+        path: '404',
+        element: (
+          <NotFound />
+        ),
+      },
+      {
+        path: '*',
+        element: (
+          <NotFound />
         ),
       },
     ],

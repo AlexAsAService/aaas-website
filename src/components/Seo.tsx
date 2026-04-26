@@ -8,25 +8,28 @@ interface SeoProps {
   title?: string;
   description: string;
   /** Path portion of the URL, e.g. "/" or "/about" */
-  canonical: string;
+  canonical?: string;
   ogType?: 'website' | 'article';
+  /** Set to true to prevent search engines from indexing the page (e.g. for 404s) */
+  noindex?: boolean;
 }
 
-export default function Seo({ title, description, canonical, ogType = 'website' }: SeoProps) {
+export default function Seo({ title, description, canonical, ogType = 'website', noindex = false }: SeoProps) {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
-  const canonicalUrl = `${BASE_URL}${canonical}`;
+  const canonicalUrl = canonical ? `${BASE_URL}${canonical}` : undefined;
 
   return (
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={canonicalUrl} />
+      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {noindex && <meta name="robots" content="noindex" />}
 
       {/* Open Graph */}
       <meta property="og:type" content={ogType} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={canonicalUrl} />
+      {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
       <meta property="og:site_name" content={SITE_NAME} />
 
       {/* Twitter card */}
